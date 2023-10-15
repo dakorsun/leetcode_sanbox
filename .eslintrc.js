@@ -9,7 +9,7 @@ module.exports = {
         'jest/valid-expect': 'error',
     },
     env: {
-        es6: true,
+        es2020: true,
         node: true,
         'jest/globals': true,
     },
