@@ -25,8 +25,8 @@ var removeDuplicateLetters = function (s) {
             stack.push(l);
         }
     }
-    
-    return stack.join('')
+
+    return stack.join('');
 };
 
 module.exports = removeDuplicateLetters;

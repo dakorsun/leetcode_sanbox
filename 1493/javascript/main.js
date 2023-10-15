@@ -42,5 +42,3 @@ var longestSubarray = function (nums) {
 };
 
 module.exports = longestSubarray;
-
-
