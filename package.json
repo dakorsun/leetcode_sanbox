@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "jest",
+        "test:watch": "jest --watch",
         "lint:all": "pnpm run prettier:check && pnpm run lint",
         "lint": "eslint .",
         "prettier:check": "prettier --check .",
