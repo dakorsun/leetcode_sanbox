@@ -7,7 +7,6 @@ var nextGreatestLetter = function (letters, target) {
     let pointer = 0;
 
     while (pointer < letters.length) {
-        console.log(`try: ${letters[pointer]} - ${target}`);
         if (letters[pointer] > target) {
             break;
         }

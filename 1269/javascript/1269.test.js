@@ -1,4 +1,4 @@
-const numWays = require("./main");
+const numWays = require('./main');
 
 const sources = [
     { steps: 3, arrLen: 2, expectation: 4 },

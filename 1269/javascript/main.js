@@ -5,4 +5,4 @@
  */
 var numWays = function (steps, arrLen) {};
 
-module.exports = numWays
+module.exports = numWays;
