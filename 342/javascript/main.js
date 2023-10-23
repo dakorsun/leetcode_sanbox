@@ -3,15 +3,11 @@
  * @return {boolean}
  */
 var isPowerOfFour = function (n) {
-    if (n === 1 || n === 4) {
-        return true;
-    }
-
-    if (n < 4) {
+    if (n <= 0) {
         return false;
     }
 
-    return n % 4 === 0 ? isPowerOfFour(n / 4) : false;
+    return Number.isInteger(Math.log(n) / Math.log(4));
 };
 
 module.exports = isPowerOfFour;
