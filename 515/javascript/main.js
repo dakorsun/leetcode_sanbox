@@ -68,7 +68,6 @@ function getParentIndex(ni) {
 var largestValues = function (root) {
     const allValuesLayered = [];
     writeNodeValue(root, 0, allValuesLayered);
-    console.log(`allValuesLayered: ${JSON.stringify(allValuesLayered)}`);
     const result = allValuesLayered.map((layer) =>
         layer.reduce((largest, val) => (largest > val ? largest : val))
     );
