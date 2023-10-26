@@ -7,7 +7,7 @@ const sources = [
     },
     {
         arr: [2, 4, 5, 10],
-        expectation: [7],
+        expectation: 7,
     },
 ];
 
