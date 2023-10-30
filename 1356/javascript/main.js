@@ -6,16 +6,16 @@ var sortByBits = function (arr) {
     arr.sort((a, b) => {
         const aBin = (a >>> 0).toString(2);
         const bBin = (b >>> 0).toString(2);
-        const aOneLength = aBin
-            .split('0')
-            .join('')
-            .split('')
-            .filter((str) => str.length).length;
-        const bOneLength = bBin
-            .split('0')
-            .join('')
-            .split('')
-            .filter((str) => str.length).length;
+        let aOneLength = 0,
+            bOneLength = 0;
+        for (
+            let i = 0;
+            i < (aBin.length > bBin.length ? aBin.length : bBin.length);
+            i++
+        ) {
+            if (aBin[i] > 0) aOneLength++;
+            if (bBin[i] > 0) bOneLength++;
+        }
         if (aOneLength > bOneLength) {
             return 1;
         }
