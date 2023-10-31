@@ -3,15 +3,13 @@
  * @return {number[]}
  */
 var findArray = function (pref) {
-    return pref
-        .reverse()
-        .map((pr, i, arr) => {
-            if (i === arr.length - 1) {
-                return pr;
-            }
-            return pr ^ arr[i + 1];
-        })
-        .reverse();
+    const result = pref.map((pr, i, arr) => {
+        if (i === 0) {
+            return pr;
+        }
+        return arr[i - 1] ^ pr;
+    });
+    return result;
 };
 
 module.exports = findArray;
