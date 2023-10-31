@@ -3,12 +3,10 @@
  * @return {number[]}
  */
 var findArray = function (pref) {
-    const result = pref.map((pr, i, arr) => {
-        if (i === 0) {
-            return pr;
-        }
-        return arr[i - 1] ^ pr;
-    });
+    let result = [pref[0]];
+    for (let i = 1; i < pref.length; i++) {
+        result.push(pref[i] ^ pref[i - 1]);
+    }
     return result;
 };
 
