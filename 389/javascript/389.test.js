@@ -1,4 +1,5 @@
-const findTheDifference = require('./main');
+import { describe, it, expect } from 'vitest';
+import findTheDifference from './main';
 const sources = [
     { s: 'abcd', t: 'abcde', expectation: 'e' },
     { s: '', t: 'y', expectation: 'y' },

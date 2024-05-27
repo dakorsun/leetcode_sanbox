@@ -16,4 +16,4 @@ var findTheDifference = function (s, t) {
     return tArray[0];
 };
 
-module.exports = findTheDifference;
+export default findTheDifference;

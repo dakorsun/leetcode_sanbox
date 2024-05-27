@@ -26,4 +26,4 @@ var findPoisonedDuration = function (timeSeries, duration) {
     return result;
 };
 
-module.exports = findPoisonedDuration;
+export default findPoisonedDuration;

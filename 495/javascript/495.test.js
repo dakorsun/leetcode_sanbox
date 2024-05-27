@@ -1,4 +1,5 @@
-const findPoisonedDuration = require('./main');
+import { describe, it, expect } from 'vitest';
+import findPoisonedDuration from './main';
 
 const sources = [
     { timeSeries: [1, 4], duration: 2, expectation: 4 },
@@ -11,8 +12,6 @@ const sources = [
         expectation: 14,
     },
 ];
-
-describe('', () => {});
 
 describe('495. Teemo Attacking', () => {
     sources.forEach(({ timeSeries, duration, expectation }) => {
